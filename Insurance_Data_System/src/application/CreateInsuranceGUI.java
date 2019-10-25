@@ -12,7 +12,7 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.SpinnerListModel;
 
-public class InsuranceGUI extends JFrame implements ActionListener {
+public class CreateInsuranceGUI extends JFrame implements ActionListener {
 
 	JFrame insurance = new JFrame("Insurance Data System GUI");
 	Container content = insurance.getContentPane();
@@ -53,18 +53,25 @@ public class InsuranceGUI extends JFrame implements ActionListener {
 			//quit the application
 	         JButton quitApp = new JButton("Quit application");
 	         
+	         JOptionPane confirmation = new JOptionPane("Are you sure?", JOptionPane.YES_NO_OPTION);
+
+			@Override
+			public void actionPerformed(ActionEvent e){
+				// TODO Auto-generated method stub
+				
+			}
 	         
 	         
+	         
+	         
+	         
+	         
+	         
+	         
+	         
+	         
+
 	
 
-	public static void main(String[] args) {
-		
-
-	}
-
-	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
 
 }
