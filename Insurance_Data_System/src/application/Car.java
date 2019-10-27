@@ -6,7 +6,6 @@ Student number: C18709101
 Course Code: DT354/2
 /////////////////////*/
 
-import javax.swing.JSpinner;
 
 public class Car { // car class to create objects for the system
 	private String plateNumber;
@@ -45,8 +44,17 @@ public class Car { // car class to create objects for the system
 	}
 
 	public String toString() {
+		String accident;
+		
+		if (this.hadAccident == true)
+		{
+			accident=" yes";
+		}
+		else
+			accident=" no";
+		
 		return "\nPlate Number= " + this.plateNumber + "\nCar Year= " + this.carYear
-				+ "\nHas the Vehicle had an Accident? = " + this.hadAccident;
+				+ "\nHas the Vehicle had an Accident? = " + accident;
 	}
 
 	}
