@@ -9,10 +9,10 @@ Course Code: DT354/2
 
 public class Car { // car class to create objects for the system
 	private String plateNumber;
-	private String carYear;
+	private int carYear;
 	private boolean hadAccident;
 
-	public Car(String pn, String cy, boolean ha) {
+	public Car(String pn, int cy, boolean ha) {
 		this.plateNumber = pn;
 		this.carYear = cy;
 		this.hadAccident = ha;
@@ -27,11 +27,11 @@ public class Car { // car class to create objects for the system
 		this.plateNumber = plateNumber;
 	}
 
-	public String getCarYear() {
+	public int getCarYear() {
 		return carYear;
 	}
 
-	public void setCarYear(String carYear) {
+	public void setCarYear(int carYear) {
 		this.carYear = carYear;
 	}
 
